@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Pizza } from '../../Shared/Pizza';
 import { PizzaListComponent } from '../pizza-list/pizza-list.component';
 
@@ -8,5 +8,5 @@ import { PizzaListComponent } from '../pizza-list/pizza-list.component';
   styleUrls: ['./pizza-details.component.css']
 })
 export class PizzaDetailsComponent {
-  PizzaReine : Pizza = new Pizza("Reine","url","pizza reine");
+  @Input() selectedPizza: Pizza = new Pizza('', '', '') ;
 }

@@ -1,8 +1,13 @@
-<p>Liste des Pizzas !</p>
-<li *ngFor = "let p of listePizza">
-<a>
-    <p>  {{p.name}}</p>
-    <p>  {{p.img}} </p>
-    <p>  {{p.desc}}</p>
-</a>
-</li>
+<h2>Liste des Pizzas !</h2>
+<div>
+  <ul>
+    <li *ngFor="let pizza of pizzas; let i = index">
+      <a href="#" (click)="recupPizza(i)">{{ pizza.name }}</a>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="selectedPizza">
+  <h3>{{ selectedPizza.name }}</h3>
+  <img [src]="selectedPizza.img" alt="{{ selectedPizza.name }}" class="image-pizza">
+</div>
