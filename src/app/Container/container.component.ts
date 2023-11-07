@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { Pizza } from '../Shared/Pizza';
+
+@Component({
+  selector: 'app-container',
+  templateUrl: './container.component.html',
+  styleUrls: ['./container.component.css']
+})
+export class ContainerComponent {
+  selectedPizza: Pizza | undefined;
+
+  onPizzaSelected(pizza: Pizza) {
+    this.selectedPizza = pizza;
+  }
+}
