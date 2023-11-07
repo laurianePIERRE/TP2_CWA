@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PizzaListComponent } from './pizza-list/pizza-list.component';
+import { PizzaListComponent } from './View/pizza-list/pizza-list.component';
 
 const routes: Routes = [
   { path: 'Accueil', component: PizzaListComponent },
