@@ -2,3 +2,13 @@
     max-width: 200px; /* Largeur maximale de 200 pixels */
     max-height: 200px; /* Hauteur maximale de 200 pixels */
   }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
