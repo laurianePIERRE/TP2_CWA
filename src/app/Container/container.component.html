@@ -1,9 +1,6 @@
 <div class = "container">
-<app-pizza-list class = "pizza_ingredient" (pizzaSelected)="onPizzaSelected($event)"></app-pizza-list>
-<div class = "pizza_pict" *ngIf ="selectedPizza" >
-    <app-pizza-details [selectedPizza]="selectedPizza"></app-pizza-details>
-</div>
-
-
-
+    <app-pizza-list (pizzaSelected)="onPizzaSelected($event)"></app-pizza-list>
+        <div *ngIf ="selectedPizza" >
+            <app-pizza-details class = "pizza_details" [selectedPizza]="selectedPizza"></app-pizza-details>
+    </div>
 </div>

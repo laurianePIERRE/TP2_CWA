@@ -1,4 +1,10 @@
+
 <div *ngIf="selectedPizza">
+  <h3>{{ selectedPizza.name }}</h3>
+  <img [src]="selectedPizza.img" alt="{{ selectedPizza.name }}" class="image-pizza">
+ 
+  
+
   <h3>Ingrédients :</h3> 
   <ul>
       <li *ngFor="let ingredient of selectedPizza.ingredients">
