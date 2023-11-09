@@ -1,5 +1,4 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
-    gap: 10px; /* Espace entre les colonnes */
+    grid-template-columns: 1fr 1fr; 
 }

@@ -4,14 +4,17 @@
     margin: 0;
 }
 
-
 .pizza {
-  color:rgb(240, 240, 240);
-  background-color: hsl(183, 65%, 51%); 
+  color:rgb(16, 16, 16);
   padding: 10px; 
   transition: background-color 0.1s;
 }
 
 .pizza:hover {
-  background-color: rgb(42, 42, 126);
+  color : rgb(240, 240, 240);
+  background-color: rgb(36, 38, 48);
+}
+
+.title {
+  padding-left : 20%;
 }

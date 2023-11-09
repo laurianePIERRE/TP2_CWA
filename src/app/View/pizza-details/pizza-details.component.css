@@ -1,4 +1,21 @@
 .image-pizza {
-    max-width: 200px; /* Largeur maximale de 200 pixels */
-    max-height: 200px; /* Hauteur maximale de 200 pixels */
+    max-width: 200px; 
+    max-height: 200px; 
+  }
+
+  .details {
+    background-color: rgb(232, 232, 239);
+  }
+
+  .inside_details {
+    margin-left : 20px;
+
+  }
+  .ingredients {
+    padding-bottom: 10px;;
+
+  }
+
+  .pizza_name {
+    padding-top: 10px;
   }
