@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Pizza } from '../../Shared/Pizza';
+import { Pizza } from '../../Shared/models/Pizza';
 import { PizzaListComponent } from '../pizza-list/pizza-list.component';
 import { Ingredient } from 'src/app/Shared/models/Ingredient';
 

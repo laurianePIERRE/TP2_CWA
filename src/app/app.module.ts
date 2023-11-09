@@ -7,6 +7,7 @@ import { PizzaListComponent } from './View/pizza-list/pizza-list.component';
 import { PizzaDetailsComponent } from './View/pizza-details/pizza-details.component';
 import { HeaderComponent } from './header/header.component';
 import { ContainerComponent } from './Container/container.component';
+import { SelectionDirective } from './Shared/selection.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContainerComponent } from './Container/container.component';
     PizzaListComponent,
     PizzaDetailsComponent,
     HeaderComponent,
-    ContainerComponent
+    ContainerComponent,
+    SelectionDirective
   ],
   imports: [
     BrowserModule,

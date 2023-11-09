@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Pizza } from '../Shared/Pizza';
+import { Pizza } from '../Shared/models/Pizza';
 
 @Component({
   selector: 'app-container',

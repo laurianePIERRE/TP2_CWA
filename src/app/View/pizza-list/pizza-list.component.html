@@ -1,8 +1,8 @@
-<h2 class = "title">Liste des Pizzas</h2>
+<h2 class = "title">Liste des Pizzas </h2>
 <div>
   <ul>
     <li *ngFor="let pizza of pizzas; let i = index">
-      <p class = "pizza" (click)="recupPizza(i)">{{ pizza.name }}</p>
+      <p class = "pizza" appSelection (click)="recupPizza(i)">{{ pizza.name }}</p>
     </li>
   </ul>
 </div>

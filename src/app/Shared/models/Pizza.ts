@@ -1,4 +1,4 @@
-import { Ingredient } from "./models/Ingredient";
+import { Ingredient } from "./Ingredient";
 
 export class Pizza {
     public name : string;
