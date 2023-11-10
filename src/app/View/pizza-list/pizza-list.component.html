@@ -1,8 +1,13 @@
 <h2 class = "title">Liste des Pizzas </h2>
 <div>
+
+  <!-- Itération *ngFor sur chaque élément pizza dans le tableau pizzas -->
   <ul>
     <li *ngFor="let pizza of pizzas; let i = index">
-      <p class = "pizza" appSelection (click)="recupPizza(i)">{{ pizza.name }}</p>
+
+      <!-- classe 'pizza' et directive d'attribut appSelection -->
+      <p class="pizza" appSelection (click)="recupPizza(i)">{{ pizza.name }}</p>
+
     </li>
   </ul>
 </div>

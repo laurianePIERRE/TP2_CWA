@@ -1,7 +1,13 @@
 <app-header></app-header>
 <div class = "container">
-    <app-pizza-list (pizzaSelected)="onPizzaSelected($event)"></app-pizza-list>
-        <div *ngIf ="selectedPizza" >
-            <app-pizza-details class = "pizza_details" [selectedPizza]="selectedPizza"></app-pizza-details>
-    </div>
+
+  <!-- Balise du composant app-pizza-list avec gestion de l'événement 'pizzaSelected' -->
+  <app-pizza-list (pizzaSelected)="onPizzaSelected($event)"></app-pizza-list>
+
+  <!-- Condition *ngIf pour afficher le composant app-pizza-details lorsque selectedPizza est défini -->
+  <div *ngIf="selectedPizza">
+
+    <!-- Balise du composant app-pizza-details avec classe CSS 'pizza_details' et liaison de propriété [selectedPizza] -->
+    <app-pizza-details class="pizza_details" [selectedPizza]="selectedPizza"></app-pizza-details>
+
 </div>

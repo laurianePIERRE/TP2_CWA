@@ -8,7 +8,8 @@ import { Pizza } from '../Shared/models/Pizza';
 })
 export class ContainerComponent {
   selectedPizza: Pizza | undefined;
-
+  
+  // Fonction appelée lorsqu'une pizza est sélectionnée
   onPizzaSelected(pizza: Pizza) {
     this.selectedPizza = pizza;
   }

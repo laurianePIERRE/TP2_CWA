@@ -10,6 +10,7 @@
   transition: background-color 0.1s;
 }
 
+/* Style au survol des éléments de classe 'pizza' */
 .pizza:hover {
   color : rgb(240, 240, 240);
   background-color: rgb(36, 38, 48);

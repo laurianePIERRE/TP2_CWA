@@ -9,5 +9,6 @@ import { Ingredient } from 'src/app/Shared/models/Ingredient';
   styleUrls: ['./pizza-details.component.css']
 })
 export class PizzaDetailsComponent {
+  // Propriété d'entrée (@Input) qui reçoit une instance de Pizza depuis le composant parent
   @Input() selectedPizza: Pizza = new Pizza('', '', [new Ingredient('',0)]) ;
 }
